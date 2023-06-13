@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const App = () => {
@@ -13,7 +13,6 @@ const App = () => {
       <View style={styles.container}>
 
         <View>
-          {/*<TouchableOpacity {...styles.button,styles.button01.backgroundColor.at.styles.button02} onPress={() => alert('a-A (á)')}>*/}
           <TouchableOpacity style={styles.button02} onPress={() => alert('a-A (á)')}>
             <Text>a-A (á)</Text>
           </TouchableOpacity>
@@ -134,9 +133,7 @@ const App = () => {
 const styles = StyleSheet.create({
   safeareaview: {
     flex: 1,
-    //flexDirection: 'column-reverse',
     justifyContent: 'center',
-    //paddingHorizontal: 10,
     paddingTop: 10,
     justifyContent: 'space-around',
   },
@@ -144,9 +141,7 @@ const styles = StyleSheet.create({
   containerX: {
     flex: 2,
     flexDirection: 'row',
-    //flexDirection: 'column',
     justifyContent: 'center',
-    //paddingHorizontal: 10,
     paddingTop: 80,
     justifyContent: 'space-around',
   },
@@ -154,9 +149,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 30,
     flexDirection: 'row',
-    //flexDirection: 'column',
-    //justifyContent: 'center',
-    //paddingHorizontal: 10,
     paddingTop: 10,
     justifyContent: 'space-around',
   },
